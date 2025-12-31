@@ -47,351 +47,380 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-rocket"></i> Funngro
+            <a href="index.html" class="logo" aria-label="Funngro Home">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i> Funngro
             </a>
-            <div class="mobile-toggle">
-                <i class="fa-solid fa-bars"></i>
+            <div class="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">For Teens</a></li>
+                <li><a href="teen.html">For Teens</a></li>
                 <li><a href="parents.html">For Parents</a></li>
-                <li><a href="company.html" style="color: var(--primary);">For Companies</a></li>
+                <li><a href="company.html" style="color: var(--primary);" aria-current="page">For Companies</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#" class="btn btn-primary">Download App</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- 1. Hero Section (B2B Value Prop) -->
-    <section class="section hero"
-        style="padding-top: 4rem; background: linear-gradient(180deg, var(--bg-body) 0%, white 100%);">
-        <div class="container grid"
-            style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center;">
-            <div class="hero-content fade-in">
-                <div
-                    style="text-transform: uppercase; letter-spacing: 2px; color: var(--primary); font-weight: 700; margin-bottom: 1rem; font-size: 0.9rem;">
-                    Corporate Solutions</div>
-                <h1 style="margin-bottom: 1.5rem; font-size: clamp(2.5rem, 5vw, 3.5rem);">
-                    Unlock Gen-Z Creativity <br><span class="text-gradient">Scale Faster</span>
-                </h1>
-                <p style="font-size: 1.25rem; margin-bottom: 2rem; color: var(--text-muted);">
-                    Get your projects delivered by India's smartest 50L+ teenlancers. Cost-effective, digitally native,
-                    and ready to work.
-                </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#post-project" class="btn btn-primary" style="padding: 1rem 2rem;">Post a Requirement</a>
-                    <a href="#case-studies" class="btn btn-outline" style="padding: 1rem 2rem;">View Success Stories</a>
-                </div>
-                <div style="margin-top: 2rem; display: flex; gap: 1rem; font-size: 0.9rem; color: var(--text-muted);">
-                    <span><i class="fa-solid fa-check" style="color: var(--primary);"></i> Zero Hiring Fee</span>
-                    <span><i class="fa-solid fa-check" style="color: var(--primary);"></i> GST Compliant Invoices</span>
-                </div>
-            </div>
-            <div class="hero-image fade-in" style="display: flex; justify-content: center;">
-                <div
-                    style="width: 100%; max-width: 500px; aspect-ratio: 4/3; background: #E0F2F1; border-radius: 2rem; display: flex; align-items: center; justify-content: center; position: relative;">
-                    <i class="fa-solid fa-briefcase" style="font-size: 8rem; color: var(--primary); opacity: 0.2;"></i>
-                    <!-- Stats Badge -->
+    <main>
+        <!-- 1. Hero Section (B2B Value Prop) -->
+        <section class="section hero"
+            style="padding-top: 4rem; background: linear-gradient(180deg, var(--bg-body) 0%, white 100%);">
+            <div class="container grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center;">
+                <div class="hero-content fade-in">
                     <div
-                        style="position: absolute; bottom: 2rem; left: -1rem; background: white; padding: 1.25rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 220px;">
-                        <div style="display: flex; align-items: center; gap: 0.75rem;">
-                            <div
-                                style="width: 40px; height: 40px; background: #ECFDF5; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <i class="fa-solid fa-chart-line" style="color: var(--primary);"></i></div>
-                            <div>
-                                <div style="font-weight: bold; font-size: 1.1rem;">4000+</div>
-                                <div style="font-size: 0.8rem; color: var(--text-muted);">Companies Trust Us</div>
+                        style="text-transform: uppercase; letter-spacing: 2px; color: var(--primary); font-weight: 700; margin-bottom: 1rem; font-size: 0.9rem;">
+                        Corporate Solutions</div>
+                    <h1 style="margin-bottom: 1.5rem; font-size: clamp(2.5rem, 5vw, 3.5rem);">
+                        Unlock Gen-Z Creativity <br><span class="text-gradient">Scale Faster</span>
+                    </h1>
+                    <p style="font-size: 1.25rem; margin-bottom: 2rem; color: var(--text-muted);">
+                        Get your projects delivered by India's smartest 50L+ teenlancers. Cost-effective, digitally
+                        native, and ready to work.
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#post-project" class="btn btn-primary" style="padding: 1rem 2rem;">Post a
+                            Requirement</a>
+                        <a href="#case-studies" class="btn btn-outline" style="padding: 1rem 2rem;">View Success
+                            Stories</a>
+                    </div>
+                    <div
+                        style="margin-top: 2rem; display: flex; gap: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <span><i class="fa-solid fa-check" style="color: var(--primary);" aria-hidden="true"></i> Zero
+                            Hiring Fee</span>
+                        <span><i class="fa-solid fa-check" style="color: var(--primary);" aria-hidden="true"></i> GST
+                            Compliant Invoices</span>
+                    </div>
+                </div>
+                <div class="hero-image fade-in" style="display: flex; justify-content: center;">
+                    <div style="width: 100%; max-width: 500px; aspect-ratio: 4/3; background: #E0F2F1; border-radius: 2rem; display: flex; align-items: center; justify-content: center; position: relative;"
+                        role="img" aria-label="Illustration of business growth">
+                        <i class="fa-solid fa-briefcase" style="font-size: 8rem; color: var(--primary); opacity: 0.2;"
+                            aria-hidden="true"></i>
+                        <!-- Stats Badge -->
+                        <div
+                            style="position: absolute; bottom: 2rem; left: -1rem; background: white; padding: 1.25rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 220px;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div
+                                    style="width: 40px; height: 40px; background: #ECFDF5; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-chart-line" style="color: var(--primary);"
+                                        aria-hidden="true"></i></div>
+                                <div>
+                                    <div style="font-weight: bold; font-size: 1.1rem;">4000+</div>
+                                    <div style="font-size: 0.8rem; color: var(--text-muted);">Companies Trust Us</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 2. Why Hire Teens -->
-    <section class="section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 4rem;">Maximize ROI with Teen Talent</h2>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                <div class="card fade-in">
-                    <div
-                        style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                        <i class="fa-solid fa-coins" style="font-size: 1.5rem; color: var(--primary);"></i>
-                    </div>
-                    <h3>Cost Efficiency</h3>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">Reduce operational costs by outsourcing tasks
-                        to skilled teens. Pay only for the output delivered.</p>
-                </div>
-                <div class="card fade-in">
-                    <div
-                        style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                        <i class="fa-solid fa-lightbulb" style="font-size: 1.5rem; color: var(--primary);"></i>
-                    </div>
-                    <h3>Digital Natives</h3>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">Teens understand social media trends, memes,
-                        and digital tools better than most agencies.</p>
-                </div>
-                <div class="card fade-in">
-                    <div
-                        style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                        <i class="fa-solid fa-rocket" style="font-size: 1.5rem; color: var(--primary);"></i>
-                    </div>
-                    <h3>Business Agility</h3>
-                    <p style="margin-top: 1rem; color: var(--text-muted);">Need a survey done in 24 hours? Or 1000 app
-                        installs? Our massive pool delivers speed.</p>
+        <!-- 2. Why Hire Teens -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">Maximize ROI with Teen Talent</h2>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <article class="card fade-in">
+                        <div
+                            style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-coins" style="font-size: 1.5rem; color: var(--primary);"
+                                aria-hidden="true"></i>
+                        </div>
+                        <h3>Cost Efficiency</h3>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">Reduce operational costs by outsourcing
+                            tasks to skilled teens. Pay only for the output delivered.</p>
+                    </article>
+                    <article class="card fade-in">
+                        <div
+                            style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-lightbulb" style="font-size: 1.5rem; color: var(--primary);"
+                                aria-hidden="true"></i>
+                        </div>
+                        <h3>Digital Natives</h3>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">Teens understand social media trends,
+                            memes, and digital tools better than most agencies.</p>
+                    </article>
+                    <article class="card fade-in">
+                        <div
+                            style="width: 60px; height: 60px; background: #E0F7FA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-rocket" style="font-size: 1.5rem; color: var(--primary);"
+                                aria-hidden="true"></i>
+                        </div>
+                        <h3>Business Agility</h3>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">Need a survey done in 24 hours? Or 1000
+                            app installs? Our massive pool delivers speed.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 3. Skill Categories (Business Solutions) -->
-    <section class="section" style="background: white;">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="margin-bottom: 1rem;">Solutions for Every Department</h2>
-                <p style="color: var(--text-muted);">From Marketing to Tech, find the right talent.</p>
-            </div>
-
-            <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
-                <!-- Marketing -->
-                <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
-                    <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
-                            class="fa-solid fa-bullhorn" style="color: var(--secondary);"></i></div>
-                    <div>
-                        <h4 style="margin-bottom: 0.2rem;">Marketing</h4>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Social Media, Influencers</span>
-                    </div>
-                </div>
-                <!-- Content -->
-                <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
-                    <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
-                            class="fa-solid fa-pen-fancy" style="color: var(--secondary);"></i></div>
-                    <div>
-                        <h4 style="margin-bottom: 0.2rem;">Content</h4>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Blogs, SEO Articles</span>
-                    </div>
-                </div>
-                <!-- Tech -->
-                <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
-                    <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
-                            class="fa-solid fa-laptop-code" style="color: var(--secondary);"></i></div>
-                    <div>
-                        <h4 style="margin-bottom: 0.2rem;">Technology</h4>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Websites, App Testing</span>
-                    </div>
-                </div>
-                <!-- Operations -->
-                <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
-                    <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
-                            class="fa-solid fa-list-check" style="color: var(--secondary);"></i></div>
-                    <div>
-                        <h4 style="margin-bottom: 0.2rem;">Operations</h4>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Data Entry, Research</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Hiring Process -->
-    <section class="section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 4rem;">Hire in 4 Simple Steps</h2>
-            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
-
-                <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
-                    <div
-                        style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                        1</div>
-                    <div>
-                        <h3 style="margin-bottom: 0.5rem;">Post Your Requirement</h3>
-                        <p style="color: var(--text-muted);">Define scope, budget, and timeline. Free to post.</p>
-                    </div>
+        <!-- 3. Skill Categories (Business Solutions) -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="margin-bottom: 1rem;">Solutions for Every Department</h2>
+                    <p style="color: var(--text-muted);">From Marketing to Tech, find the right talent.</p>
                 </div>
 
-                <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
-                    <div
-                        style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                        2</div>
-                    <div>
-                        <h3 style="margin-bottom: 0.5rem;">Shortlist Candidates</h3>
-                        <p style="color: var(--text-muted);">Review profiles, past work, and ratings. Select the best
-                            fit.</p>
+                <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                    <!-- Marketing -->
+                    <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
+                                class="fa-solid fa-bullhorn" style="color: var(--secondary);" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Marketing</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Social Media, Influencers</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
-                    <div
-                        style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                        3</div>
-                    <div>
-                        <h3 style="margin-bottom: 0.5rem;">Execution & Tracking</h3>
-                        <p style="color: var(--text-muted);">Work begins. Communicate via the app and track milestones.
-                        </p>
+                    <!-- Content -->
+                    <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
+                                class="fa-solid fa-pen-fancy" style="color: var(--secondary);" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Content</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Blogs, SEO Articles</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
-                    <div
-                        style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                        4</div>
-                    <div>
-                        <h3 style="margin-bottom: 0.5rem;">Approve & Pay</h3>
-                        <p style="color: var(--text-muted);">Payment is released only when you approve the final output.
-                        </p>
+                    <!-- Tech -->
+                    <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
+                                class="fa-solid fa-laptop-code" style="color: var(--secondary);" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Technology</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Websites, App Testing</span>
+                        </div>
+                    </div>
+                    <!-- Operations -->
+                    <div class="card fade-in" style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #F3F4F6; padding: 1rem; border-radius: 0.5rem;"><i
+                                class="fa-solid fa-list-check" style="color: var(--secondary);" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Operations</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Data Entry, Research</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 5. Pricing Model -->
-    <section class="section" style="background: #FAFAFA; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-        <div class="container" style="text-align: center; max-width: 800px;">
-            <h2 style="margin-bottom: 1.5rem;">Transparent Project-Based Pricing</h2>
-            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem;">No monthly salaries. No hidden
-                fees. Pay purely for the value you receive.</p>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); text-align: left;">
-                <div class="bg-white p-4"
-                    style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Micro Tasks</h4>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 100+</div>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Surveys, Installs, Reviews</p>
-                </div>
-                <div class="bg-white p-4"
-                    style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Creative Work</h4>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 500+</div>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Blogs, Social Media Posts</p>
-                </div>
-                <div class="bg-white p-4"
-                    style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Technical Projects</h4>
-                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 2000+</div>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Web Development, App Dev</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- 4. Hiring Process -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">Hire in 4 Simple Steps</h2>
+                <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
 
-    <!-- 6. Case Studies -->
-    <section id="case-studies" class="section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 4rem;">Success Stories</h2>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                <div class="case-study-card fade-in">
-                    <h4 style="margin-bottom: 1rem;">EdTech Startup Scaled Traffic</h4>
-                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Used 50 Teenlancers to write SEO blogs.
-                        Resulted in 300% traffic growth in 3 months.</p>
-                    <div style="font-weight: bold; color: var(--primary);">200+ Blogs Delivered</div>
-                </div>
-                <div class="case-study-card fade-in">
-                    <h4 style="margin-bottom: 1rem;">FMCG Brand Market Research</h4>
-                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Conducted a survey of 2000 teens to
-                        understand flavor preferences for a new drink.</p>
-                    <div style="font-weight: bold; color: var(--primary);">Completed in 48 Hours</div>
-                </div>
-                <div class="case-study-card fade-in">
-                    <h4 style="margin-bottom: 1rem;">SaaS App Beta Testing</h4>
-                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Hired 100 testers to find bugs and UX
-                        issues before launch.</p>
-                    <div style="font-weight: bold; color: var(--primary);">150+ Bugs Reported</div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div
+                            style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                            1</div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Post Your Requirement</h3>
+                            <p style="color: var(--text-muted);">Define scope, budget, and timeline. Free to post.</p>
+                        </div>
+                    </div>
 
-    <!-- 7. Compliance & Safeguarding -->
-    <section class="section"
-        style="background: white; border: 1px solid var(--border); margin: 2rem auto; max-width: 1000px; border-radius: 1rem;">
-        <div class="container" style="padding: 2rem;">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <h2 style="margin-bottom: 0.5rem;">Corporate Compliance & Safety</h2>
-                <p style="color: var(--text-muted);">We handle the legal complexities so you don't have to.</p>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-                <div class="compliance-badge"><i class="fa-solid fa-shield-check"></i> Minor Labor Law Compliant</div>
-                <div class="compliance-badge"><i class="fa-solid fa-file-invoice"></i> GST Invoicing</div>
-                <div class="compliance-badge"><i class="fa-solid fa-user-check"></i> ID Verified Talent</div>
-                <div class="compliance-badge"><i class="fa-solid fa-lock"></i> Escrow Payments</div>
-                <div class="compliance-badge"><i class="fa-solid fa-copyright"></i> IP Rights Transfer</div>
-            </div>
-        </div>
-    </section>
+                    <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div
+                            style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                            2</div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Shortlist Candidates</h3>
+                            <p style="color: var(--text-muted);">Review profiles, past work, and ratings. Select the
+                                best fit.</p>
+                        </div>
+                    </div>
 
-    <!-- 8. FAQ -->
-    <section class="section">
-        <div class="container" style="max-width: 800px;">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Common Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item" style="border-bottom: 1px solid var(--border);">
-                    <div class="faq-question"
-                        style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
-                        <span>How is quality ensured?</span>
-                        <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
+                    <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div
+                            style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                            3</div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Execution & Tracking</h3>
+                            <p style="color: var(--text-muted);">Work begins. Communicate via the app and track
+                                milestones.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
-                        <p style="padding-bottom: 1.5rem; color: var(--text-muted);">You set the acceptance criteria. If
-                            a submission doesn't meet your standards, you can request revisions or reject it. You only
-                            pay for approved work.</p>
-                    </div>
-                </div>
-                <div class="faq-item" style="border-bottom: 1px solid var(--border);">
-                    <div class="faq-question"
-                        style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
-                        <span>What about Intellectual Property rights?</span>
-                        <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
-                    </div>
-                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
-                        <p style="padding-bottom: 1.5rem; color: var(--text-muted);">Once you approve and pay for a
-                            project, the IP rights are transferred to your company as per our standard terms of service.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item" style="border-bottom: 1px solid var(--border);">
-                    <div class="faq-question"
-                        style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600;">
-                        <span>Do I get a GST invoice?</span>
-                        <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
-                    </div>
-                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
-                        <p style="padding-bottom: 1.5rem; color: var(--text-muted);">Yes, Funngro bills you directly and
-                            provides a GST-compliant invoice for your business expenses.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 9. Strong CTA (Bottom Banner) -->
-    <div id="post-project" class="section"
-        style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white;">
-        <div class="container" style="text-align: center;">
-            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Hire?</h2>
-            <p
-                style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Join 4000+ companies scaling their business with Funngro.
-            </p>
-            <div style="display: flex; gap: 1rem; justify-content: center;">
-                <button class="btn btn-primary"
-                    style="padding: 1rem 3rem; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">Hire Talent
-                    Now</button>
+                    <div class="fade-in" style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div
+                            style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                            4</div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">Approve & Pay</h3>
+                            <p style="color: var(--text-muted);">Payment is released only when you approve the final
+                                output.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p style="font-size: 0.8rem; margin-top: 1.5rem; opacity: 0.6;">No credit card required to post.</p>
-        </div>
-    </div>
+        </section>
+
+        <!-- 5. Pricing Model -->
+        <section class="section"
+            style="background: #FAFAFA; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <h2 style="margin-bottom: 1.5rem;">Transparent Project-Based Pricing</h2>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem;">No monthly salaries. No
+                    hidden fees. Pay purely for the value you receive.</p>
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); text-align: left;">
+                    <div class="bg-white p-4"
+                        style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Micro Tasks</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 100+</div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Surveys, Installs, Reviews</p>
+                    </div>
+                    <div class="bg-white p-4"
+                        style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Creative Work</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 500+</div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Blogs, Social Media Posts</p>
+                    </div>
+                    <div class="bg-white p-4"
+                        style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Technical Projects</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">₹ 2000+</div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Web Development, App Dev</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Case Studies -->
+        <section id="case-studies" class="section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">Success Stories</h2>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <article class="case-study-card fade-in">
+                        <h4 style="margin-bottom: 1rem;">EdTech Startup Scaled Traffic</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Used 50 Teenlancers to write SEO
+                            blogs. Resulted in 300% traffic growth in 3 months.</p>
+                        <div style="font-weight: bold; color: var(--primary);">200+ Blogs Delivered</div>
+                    </article>
+                    <article class="case-study-card fade-in">
+                        <h4 style="margin-bottom: 1rem;">FMCG Brand Market Research</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Conducted a survey of 2000 teens to
+                            understand flavor preferences for a new drink.</p>
+                        <div style="font-weight: bold; color: var(--primary);">Completed in 48 Hours</div>
+                    </article>
+                    <article class="case-study-card fade-in">
+                        <h4 style="margin-bottom: 1rem;">SaaS App Beta Testing</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Hired 100 testers to find bugs and
+                            UX issues before launch.</p>
+                        <div style="font-weight: bold; color: var(--primary);">150+ Bugs Reported</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Compliance & Safeguarding -->
+        <section class="section"
+            style="background: white; border: 1px solid var(--border); margin: 2rem auto; max-width: 1000px; border-radius: 1rem;">
+            <div class="container" style="padding: 2rem;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="margin-bottom: 0.5rem;">Corporate Compliance & Safety</h2>
+                    <p style="color: var(--text-muted);">We handle the legal complexities so you don't have to.</p>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <div class="compliance-badge"><i class="fa-solid fa-shield-check" aria-hidden="true"></i> Minor
+                        Labor Law Compliant</div>
+                    <div class="compliance-badge"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> GST
+                        Invoicing</div>
+                    <div class="compliance-badge"><i class="fa-solid fa-user-check" aria-hidden="true"></i> ID Verified
+                        Talent</div>
+                    <div class="compliance-badge"><i class="fa-solid fa-lock" aria-hidden="true"></i> Escrow Payments
+                    </div>
+                    <div class="compliance-badge"><i class="fa-solid fa-copyright" aria-hidden="true"></i> IP Rights
+                        Transfer</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ -->
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Common Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border);">
+                        <button class="faq-question"
+                            style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; width: 100%; text-align: left; background: none; border: none; font-size: 1rem; color: inherit;"
+                            aria-expanded="false">
+                            <span>How is quality ensured?</span>
+                            <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-bottom: 1.5rem; color: var(--text-muted);">You set the acceptance
+                                criteria. If a submission doesn't meet your standards, you can request revisions or
+                                reject it. You only pay for approved work.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border);">
+                        <button class="faq-question"
+                            style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; width: 100%; text-align: left; background: none; border: none; font-size: 1rem; color: inherit;"
+                            aria-expanded="false">
+                            <span>What about Intellectual Property rights?</span>
+                            <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-bottom: 1.5rem; color: var(--text-muted);">Once you approve and pay for a
+                                project, the IP rights are transferred to your company as per our standard terms of
+                                service.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border);">
+                        <button class="faq-question"
+                            style="padding: 1.5rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; width: 100%; text-align: left; background: none; border: none; font-size: 1rem; color: inherit;"
+                            aria-expanded="false">
+                            <span>Do I get a GST invoice?</span>
+                            <span class="toggle-icon" style="color: var(--primary); font-size: 1.5rem;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-bottom: 1.5rem; color: var(--text-muted);">Yes, Funngro bills you directly
+                                and provides a GST-compliant invoice for your business expenses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Strong CTA (Bottom Banner) -->
+        <section id="post-project" class="section"
+            style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Hire?</h2>
+                <p
+                    style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Join 4000+ companies scaling their business with Funngro.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <button class="btn btn-primary"
+                        style="padding: 1rem 3rem; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">Hire
+                        Talent Now</button>
+                </div>
+                <p style="font-size: 0.8rem; margin-top: 1.5rem; opacity: 0.6;">No credit card required to post.</p>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a href="index.html" class="logo"
-                        style="color: white; margin-bottom: 1rem; display: inline-block;">Funngro</a>
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem; display: inline-block;"
+                        aria-label="Funngro Home">Funngro</a>
                     <p style="opacity: 0.8; line-height: 1.6;">Connecting companies with the future workforce.</p>
                 </div>
                 <div>
@@ -415,11 +444,12 @@
                     <p style="opacity: 0.8; font-size: 0.9rem; margin-bottom: 1rem;">Manage projects on the go.</p>
                     <div style="display: flex; gap: 0.5rem;">
                         <button class="btn"
-                            style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem;"><i
-                                class="fa-brands fa-apple"></i></button>
+                            style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem;"
+                            aria-label="App Store"><i class="fa-brands fa-apple" aria-hidden="true"></i></button>
                         <button class="btn"
-                            style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem;"><i
-                                class="fa-brands fa-google-play"></i></button>
+                            style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem;"
+                            aria-label="Google Play"><i class="fa-brands fa-google-play"
+                                aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
