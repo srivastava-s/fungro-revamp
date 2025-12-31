@@ -4,7 +4,7 @@
   --primary-dark: #00A87E;
   --secondary: #2C3E50;
   --accent: #FF6B6B;
-  
+
   /* Neutrals */
   --bg-body: #F9FAFB;
   --bg-card: #FFFFFF;
@@ -14,14 +14,16 @@
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  
+
   /* Spacing */
   --container-width: 1200px;
   --header-height: 80px;
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -46,7 +48,9 @@ ul {
   list-style: none;
 }
 
-img, video, svg {
+img,
+video,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -59,7 +63,12 @@ button {
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--secondary);
@@ -95,7 +104,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px; /* Pill shape */
+  border-radius: 9999px;
+  /* Pill shape */
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -211,11 +221,23 @@ h1, h2, h3, h4, h5, h6 {
 .copyright {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-muted);
 }
 
-/* Animation utilities */
+
+/* Skill Cards specific */
+.skill-card {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: var(--primary) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations - Ensure fade-ins work smoothly */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -232,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-toggle {
     display: block;
   }
-  
+
   .nav-links {
     position: fixed;
     top: var(--header-height);
@@ -245,14 +267,16 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-150%);
     transition: transform 0.3s ease;
   }
-  
+
   .nav-links.active {
     transform: translateY(0);
   }
-  
+
   .section {
     padding: 3rem 0;
   }
-  
-  h1 { font-size: 2.5rem; }
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
